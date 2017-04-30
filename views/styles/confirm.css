@@ -1,0 +1,107 @@
+body{
+    padding-top: 70px;
+    background: #efefef;
+}
+
+#wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@media(max-width: 768px){
+    #wrapper{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Packages */
+
+#packages{
+    flex: 1;
+    overflow: auto;
+}
+
+#packages h2{
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.packages{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.packages h3{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.packages img{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.packages-action{
+    background: #eee;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+}
+
+.packages-action .price{
+    font-size: 16px;
+}
+
+.packages-action .amount{
+    width: 100px;
+    margin-top: -7px;
+    float: right;
+}
+
+.packages-action .amount .form-control{
+    border: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.packages-action .amount .form-control:focus{
+    box-shadow: none;
+    border: 0;
+}
+
+.packages-action .amount .input-group-btn .btn{
+    border: 0;
+    color: #fff;
+    background: #ddd;
+    transition: all 0.2s;
+}
+
+.packages-action .amount .input-group-btn .btn:hover{
+    background: #ccc;
+}
+
+.packages-action .amount .input-group-btn .btn:focus{
+    outline: 0;
+}
+
+/* Right Sidebar */
+
+#process-contents .nice-select{
+    pointer-events: none;
+}
+
+#process-contents .nice-select:after{
+    display: none;
+}
+
+#payment{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,170 @@
+/* Right Sidebar */
+
+#right-bar{
+    width: 300px;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 40px #000;
+}
+
+    /* Right Sidebar - Title */
+
+    #right-bar h2{
+        margin: 0;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        padding: 30px 25px 30px 25px;
+    }
+
+    /* Right Sidebar - Tabs */
+
+    #process-tabs{
+        overflow: auto;
+        position: relative;
+    }
+
+    #process-tabs .nav-tabs{
+        border: 0;
+        display: block;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    #process-tabs .nav-tabs li{
+        float: none;
+        display: inline-block;
+        width: auto;
+        margin-right: -4px;
+    }
+
+    #process-tabs .nav-tabs li a{
+        color: #ccc;
+        border-radius: 0;
+        font-weight: 300;
+        border: 0;
+        margin: 0;
+        padding: 15px 20px;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.5s;
+        background: transparent;
+    }
+
+    #process-tabs .nav-tabs li a:hover,
+    #process-tabs .nav-tabs li.active a,
+    #process-tabs .nav-tabs .swiper-slide-active a{
+        background: rgba(0,0,0,0.7);
+        border: 0;
+        color: #fff;
+    }
+
+    #process-tabs .nav-tabs li a:focus{
+        outline: 0;
+    }
+
+    /* Right Sidebar - Contents */
+
+    #process-contents{
+        padding: 25px;
+        background: rgba(0,0,0,0.7);
+        flex: 1;
+        position: relative;
+    }
+
+    #process-contents select{
+        display: none;
+    }
+
+    #process-contents .nice-select{
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        border-radius: 0;
+        float: none;
+    }
+
+    #process-contents .nice-select .current{
+        color: #ccc;
+    }
+
+    #process-contents .nice-select:after{
+        border-color: #aaa;
+    }
+
+    #process-contents .nice-select .list{
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0 0 40px #000;
+        max-height: 170px;
+        overflow: auto;
+    }
+
+    #process-contents p span{
+        color: #fff;
+        padding-bottom: 5px;
+    }
+
+    #process-contents p span.price{
+        position: absolute;
+        right: 25px;
+    }
+
+    #process-contents p span.price span{
+        float: none;
+    }
+
+    /* Rght Sidebar - ACtion Btn */
+
+    #btn-wrapper{
+        justify-content: flex-end;
+        display: flex;
+        background: rgba(0,0,0,0.7);
+        padding: 30px 25px;
+        min-height: 104px;
+    }
+
+    #btn-wrapper.flow{
+        background: none;
+    }
+
+    #right-bar .btn{
+        color: #fff;
+        background: rgba(234,189,0,1);
+        transition: all 0.2s;
+        display: block;
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 300;
+        width: 100%;
+    }
+
+    #right-bar .btn:hover,
+    #right-bar .btn:focus{
+        outline: 0;
+        background-color: #fac51c;
+    }
+
+@media(max-width: 800px){
+    #right-bar{
+        width: 100%;
+        height: auto;
+    }
+
+    .rows--mini,
+    .legend{
+        margin: 0 auto;
+        text-align: center;
+    }
+}

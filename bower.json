@@ -1,0 +1,26 @@
+{
+  "name": "project-alma",
+  "authors": [
+    "Jin Cong Ho <jincongho@gmail.com>"
+  ],
+  "description": "Modern Cinema Ticket Booking Website",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "views/dependencies",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "plax": "^1.5.0",
+    "animate.css": "^3.5.2",
+    "swiper": "^3.4.2",
+    "jquery-nice-select": "^1.1.0"
+  }
+}
